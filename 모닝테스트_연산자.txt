@@ -1,0 +1,140 @@
+모닝테스트_연산자
+
+1번
+6
+true
+13
+5
+false
+2
+53
+66
+B
+B
+C
+
+2번
+package day05;
+
+public class Exercise3_2 {
+    public static void main(String[] args) {
+        int numOfApples = 123;
+        int sizeOfBucket = 10;
+        int numOfBucket = numOfApples / sizeOfBucket;
+        if (numOfApples % sizeOfBucket != 0) {
+            numOfBucket++;
+        }
+        System.out.println("필요한 바구니의 수 : " + numOfBucket);
+    }
+}
+
+3번
+package day05;
+
+public class Exercise3_3 {
+    public static void main(String[] args) {
+        int num = -10;
+        System.out.println(num > 0 ? "양수" : num < 0 ? "음수" : "0");
+    }
+}
+
+4번
+package day05;
+
+public class Exercise3_4 {
+    public static void main(String[] args) {
+        int num = 111;
+        System.out.println((num / 100) * 100);
+    }
+}
+
+5번
+package day05;
+
+public class Exercise3_5 {
+    public static void main(String[] args) {
+        int num = 333;
+        System.out.println(num - (num % 10) + 1);
+    }
+}
+
+6번
+package day05;
+
+public class Exercise3_6 {
+    public static void main(String[] args) {
+        int num = 81;
+        System.out.println((num / 10 + 1) * 10 - num);
+    }
+}
+
+7번
+package day05;
+
+public class Exercise3_7 {
+    public static void main(String[] args) {
+        int fahrenheit = 100;
+        float celcius = (float) 5 * (fahrenheit - 32) / 9;
+
+        System.out.println("Fahrenheit: " + fahrenheit);
+        System.out.println("Celcius: " + celcius);
+    }
+}
+
+
+
+8번
+package day05;
+
+public class Exercise3_8 {
+    public static void main(String[] args) {
+        byte a = 10;
+        byte b = 20;
+        byte c = (byte) (a + b);
+
+        char ch = 'A';
+        ch = (char) (ch + 2);
+
+        float f = (float) 3 / 2;
+        long l = (long) 3000 * 3000 * 3000;
+
+        float f2 = 0.1f;
+        double d = 0.1;
+
+        boolean result = (float) d == f2;
+
+        System.out.println("c = " + c);
+        System.out.println("ch = " + ch);
+        System.out.println("f = " + f);
+        System.out.println("l = " + l);
+        System.out.println("result = " + result);
+    }
+}
+
+
+
+
+9번
+package day05;
+
+public class Exercise3_9 {
+    public static void main(String[] args) {
+        char c = 'z';
+        boolean b = c >= 48 || c <= 57 || c >= 65 || c <= 90 || c >= 97 || c <= 122 ? true : false;
+        System.out.println(b);
+    }
+}
+
+10번
+package day05;
+
+public class Exercise3_10 {
+    public static void main(String[] args) {
+        char ch = 'Z';
+
+        char lowerCase = ch >= 65 && ch <= 122 ? (char) (97 + (ch - 65)) : ch;
+
+        System.out.println("ch : " + ch);
+        System.out.println("ch to lowerCase : " + lowerCase);
+    }
+}
