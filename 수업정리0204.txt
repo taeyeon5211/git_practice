@@ -1,0 +1,22 @@
+메소드 오버라이딩을 왜 쓸까?
+기존 기능을 살리면서 더 나은 기능을 사용하기 위해서 
+
+상수선언 -> EX) public static final int NUM = 1;
+클래스 상수 접근
+클래스명.상수변수명
+
+fianl 필드 : 변경불가
+final 클래스 : 상속불가
+fianl 메소드 : 오버라이딩 불가
+
+promotion : Child c = new Child(); Parent p = child;
+down casting : Parent p = new Parent(); Child c = (Child) p;
+instanceof : child instanceof Parent
+ArrayList : 
+abstract class : 실제 인스턴스를 생성하는 class가 아니라 기능에 대한 명세를 제공하는 model class 이다.
+자식 클래스가 상속 받을때 abstract method는 강제구현 해야함
+
+-sealed class : permit 뒤에 상속 가능한 자식 클래스 지정
+-final class : 상속 불가
+-예외처리 하는 이유 : 프로그램의 정상적인 종료를 위해서
+
